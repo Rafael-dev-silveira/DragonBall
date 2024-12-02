@@ -1,0 +1,94 @@
+body {
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+
+video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: .6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 120px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul a {
+    color: var(--primary-color);
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    padding: 5px 12px;
+    border-radius: 4px;
+    transition: .6s;
+}
+
+nav ul a:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    box-shadow: 0px 0px 12px 4px var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 120px;
+    font-family: "Kaushan Script", cursive;
+    color: #fff;
+    text-align: center;
+}
+
+.texto-container p:first-child {
+    font-size: 128px;
+    font-weight: 400;
+}
+
+.texto-container p:last-child {
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 75%;
+}
+
+.texto-container h2 {
+    font-weight: 400;
+    color: var(--primary-color);
+    position: absolute;
+    margin-top: 10px;
+    right: 300px;
+}
+
+.botao {
+    display: block;
+    margin: 100px auto;
+    padding: 10px 30px;
+    font-family: "Inter", sans-serif;
+    border-radius: 8px;
+    background-color: var(--secundary-color);
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    box-shadow: 0px 0px 12px 4px var(--primary-color);
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+    border: none;
+}
